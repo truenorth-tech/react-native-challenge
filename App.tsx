@@ -1,21 +1,37 @@
+import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import ToDoScreen from './screens/ToDoScreen';
+import HomeScreen from './screens/HomeScreen';
+import ListScreen from './screens/ListScreen';
+import DetailScreen from './screens/DetailScreen';
+import WalletScreen from './screens/WalletScreen';
 
-export default function App() {
+/**
+ * Use `HomeScreen` as the initial route
+ * Replace the screen title with the `Logo` component
+ *
+ * 💯  Usage of TypeScript is a plus
+ */
+
+// import Logo from './components/ui/Logo';
+
+const Stack = createStackNavigator();
+
+function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="ToDo" component={ToDoScreen} />
+        <Stack.Screen name="List" component={ListScreen} />
+        <Stack.Screen name="Detail" component={DetailScreen} />
+        <Stack.Screen name="Wallet" component={WalletScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} />
+      </Stack.Navigator>
       <StatusBar style="auto" />
-    </View>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
