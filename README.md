@@ -19,7 +19,7 @@ Join TRUENORTH and build the next fintech app.
 
 ## Job Description
 
-1. Apply the UI from [Figma](https://www.figma.com/file/8ruatRZ6G0dt4DYR1w7IL1/React-Native-Challenge-v0.1)
+1. Apply the UI from [Figma](https://www.figma.com/file/gKrJqcJCG69bwksjF8150t/React-Navitve-Challenge-v0.1)
    1. 💯 _Usage of Accessibility properties is a plus_
    1. 💯 _Usage of TypeScript is a plus_
 2. Navigation between screens is broken, you need to fix it.
