@@ -8,7 +8,7 @@ export default function HomeScreen() {
       <Text style={styles.title}>Howdy partner!</Text>
       <Text>This is your assignment.</Text>
       <Text>Follow the instructions on the Readme file.</Text>
-      <Text>But it's easy, app should looking smooth.</Text>
+      <Text>Don’t worry, it’s easy! You should have the app looking smooth in no time.</Text>
       <Button title="Start Here" onPress={() => alert('Home')} />
     </View>
   );
