@@ -30,11 +30,11 @@ Join TRUENORTH and build the next fintech app.
    1. Implement **Sign-in** form using any user/pass combination
    1. Store **Sign-in** data using `React context`
    1. 💯 _Handling Sensitive Info and Secure Storage is a plus_
-4. `ListScreen`: Feed the ScrollView using data fetched from a RESTful API
+4. `ListScreen`: Feed the ScrollView using data fetched from a [COINCAP RESTful API](https://docs.coincap.io/#89deffa0-ab03-4e0a-8d92-637a857d2c91)
    1. ListItem should link to `DetailScreen` passing `id` as parameter
    1. 💯 _Usage of Axios is a plus_
 5. `DetailScreen`
-   1. Fetch items details from API
+   1. Fetch items details from [COINCAP RESTful API](https://docs.coincap.io/#f8869879-171f-4240-adfd-dd2947506adc)
    1. 💯 _Usage of Axios is a plus_
 6. `WalletScreen`
    1. Add a Tab navigation for: _Account_ and _Partners_ components
