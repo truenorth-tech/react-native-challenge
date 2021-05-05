@@ -33,9 +33,9 @@ function AccountSection() {
 
 function PartnersSection() {
   const partnerList = [
-    { name: 'App1', url: '#', comments: 'Just a techy comment' },
-    { name: 'App2', url: '#', comments: 'Just a techy comment' },
-    { name: 'App3', url: '#', comments: 'Just a techy comment' },
+    { name: 'App1', url: '#', comments: 'Description of the application and what you did.' },
+    { name: 'App2', url: '#', comments: 'Description of the application and what you did.' },
+    { name: 'App3', url: '#', comments: 'Description of the application and what you did.' },
   ];
 
   const ListItem = ({ item }) => {
