@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import ToDoScreen from './screens/ToDoScreen';
@@ -29,7 +29,7 @@ function App() {
         <Stack.Screen name="Wallet" component={WalletScreen} />
         <Stack.Screen name="Home" component={HomeScreen} />
       </Stack.Navigator>
-      <StatusBar style="auto" />
+      <StatusBar />
     </NavigationContainer>
   );
 }

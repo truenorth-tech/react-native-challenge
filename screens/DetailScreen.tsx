@@ -1,6 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
-import axios from 'axios';
+import {Alert, StyleSheet, Text, View, Button} from 'react-native';
 
 /**
  * ToDo: Feed the list using fetching data from a RESTful API
@@ -32,7 +31,7 @@ export default function ListScreen() {
           <Text>Max Supply {item.maxSupply}</Text>
           <Text>Market Cap Usd {item.marketCapUsd}</Text>
 
-          <Button title="My Wallet" onPress={() => alert('Wallet')} />
+          <Button title="My Wallet" onPress={() => Alert.alert('Wallet')} />
         </View>
       ) : (
         <Text>Loading</Text>

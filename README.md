@@ -4,15 +4,14 @@ Join TRUENORTH and build the next fintech app.
 
 ## Quick start
 
-- Install dependencies: `yarn install`
-- Run `yarn start` to start expo.
-- Run `yarn android` to start android emulator.
-- Run `yarn ios` to start ios emulator.
-- Run `yarn test` to test application.
+- Install dependencies: `npm install` and pods `cd ios && pod install`
+- Run `npm start` to start npm.
+- Run `react-native run-android` to start android emulator.
+- Run `react-native run-ios` to start ios emulator.
+- Run `npm run test` to test application.
 
 ## Features
 
-- 🏗 Built with [React-Native](https://reactnative.dev) using [Expo CLI](https://expo.io/)
 - 🛣 Routing and Navigation with [React-Navigation](https://reactnavigation.org)
 - 🧪 Testing powered by [Jest](https://jestjs.io)
 - 🧰 All necessary packages are already installed
