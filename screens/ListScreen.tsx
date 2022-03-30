@@ -1,5 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableWithoutFeedback, ScrollView } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  TouchableWithoutFeedback,
+  ScrollView,
+} from 'react-native';
 import axios from 'axios';
 
 /**
@@ -16,7 +22,7 @@ import axios from 'axios';
 export default function ListScreen() {
   const data = mockData.data;
 
-  const ListItem = ({ item }) => {
+  const ListItem = ({item}) => {
     return (
       <View style={styles.itemContainer}>
         {/* ToDo: Link to `DetailScreen` passing `id` as parameter */}
@@ -42,7 +48,7 @@ export default function ListScreen() {
     <View style={styles.container}>
       {data && data.length > 0 ? (
         <ScrollView>
-          {data.map((item) => (
+          {data.map(item => (
             <ListItem key={item.id} item={item} />
           ))}
         </ScrollView>
@@ -112,7 +118,8 @@ const mockData = {
       priceUsd: '627.5904768651405777',
       changePercent24Hr: '-7.3482646947958675',
       vwap24Hr: '650.8946548822847374',
-      explorer: 'https://etherscan.io/token/0xB8c77482e45F1F44dE1745F52C74426C631bDD52',
+      explorer:
+        'https://etherscan.io/token/0xB8c77482e45F1F44dE1745F52C74426C631bDD52',
     },
   ],
 };
